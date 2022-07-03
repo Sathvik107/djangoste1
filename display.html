@@ -1,0 +1,17 @@
+<!-- templates/home.html -->
+<html>
+<h1>Welcome -- REGISTRATION FORM data here</h1>
+<table border="1">
+ <tr> <th>email</th><th>password</th> </tr>
+ {% for post in dblist %}
+<tr>
+<td>
+{{ post.email }}
+</td>
+<td>
+{{ post.password }}
+</td>
+ </tr>
+ {% endfor %}
+</table>
+</html>
